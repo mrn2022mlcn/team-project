@@ -226,7 +226,7 @@
   display: block;
   width: 25px;
   height: 6px;
-  background-image: url;
+  background-image: url(../images/Group\ 4-min.svg);
 }
 
 .item__text {
@@ -255,7 +255,7 @@
   }
 }
 
-.btn__vector {
+.products__btn {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -269,9 +269,13 @@
   color: #e5e5e5;
 }
 @media screen and (min-width: 1280px) {
-  .btn__vector {
+  .products__btn {
     margin-bottom: 60px;
   }
+}
+
+.btn__vector {
+  fill: var(--accent-color);
 }
 
 body {
