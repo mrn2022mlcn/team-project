@@ -1,3 +1,4 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
 .products {
   padding: 80px 20px 0px 20px;
 }
@@ -30,7 +31,7 @@
   font-family: "Titan One";
   font-weight: 400;
   text-align: center;
-  color: #FFA5BA;
+  color: var(--third-text-color);
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.17;
@@ -55,7 +56,7 @@
   text-align: center;
   font-size: 34px;
   line-height: 1.15;
-  color: #D41443;
+  color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .products__title {
@@ -117,8 +118,7 @@
 .products__item--icecream {
   background-color: #FFB8CA;
 }
-
-.products__item--icecream::before {
+.products__item--icecream:before {
   content: "";
   position: absolute;
   top: -250px;
@@ -127,19 +127,19 @@
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 320px) {
-  .products__item--icecream::before {
+  .products__item--icecream:before {
     width: 280px;
     height: 280px;
   }
 }
 @media screen and (min-width: 768px) {
-  .products__item--icecream::before {
+  .products__item--icecream:before {
     width: 224px;
     height: 224px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .products__item--icecream::before {
+  .products__item--icecream:before {
     width: 394px;
     height: 394px;
   }
@@ -148,8 +148,7 @@
 .products__item--icecoffee {
   background-color: #F0D1A5;
 }
-
-.products__item--icecoffee::before {
+.products__item--icecoffee:before {
   content: "";
   position: absolute;
   top: -250px;
@@ -158,19 +157,19 @@
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 320px) {
-  .products__item--icecoffee::before {
+  .products__item--icecoffee:before {
     width: 280px;
     height: 280px;
   }
 }
 @media screen and (min-width: 768px) {
-  .products__item--icecoffee::before {
+  .products__item--icecoffee:before {
     width: 224px;
     height: 224px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .products__item--icecoffee::before {
+  .products__item--icecoffee:before {
     width: 394px;
     height: 394px;
   }
@@ -179,8 +178,7 @@
 .products__item--milkshakes {
   background-color: #C2E297;
 }
-
-.products__item--milkshakes::before {
+.products__item--milkshakes:before {
   content: "";
   position: absolute;
   top: -250px;
@@ -189,19 +187,19 @@
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 320px) {
-  .products__item--milkshakes::before {
+  .products__item--milkshakes:before {
     width: 280px;
     height: 280px;
   }
 }
 @media screen and (min-width: 768px) {
-  .products__item--milkshakes::before {
+  .products__item--milkshakes:before {
     width: 224px;
     height: 224px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .products__item--milkshakes::before {
+  .products__item--milkshakes:before {
     width: 394px;
     height: 394px;
   }
@@ -257,7 +255,7 @@
   }
 }
 
-.products__btn {
+.btn__vector {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -271,7 +269,90 @@
   color: #e5e5e5;
 }
 @media screen and (min-width: 1280px) {
-  .products__btn {
+  .btn__vector {
     margin-bottom: 60px;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  font-family: DM Sans, sans-serif;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+link {
+  text-decoration: none;
+}
+
+.visaully-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+:root {
+  --primary-bg-color: #ffffff;
+  --secodary-bg-color: #fff5f6;
+  --primary-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --third-text-color: #ffa5ba;
+  --fourth-text-color: #907e82;
+  --accent-color: #d41443;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
